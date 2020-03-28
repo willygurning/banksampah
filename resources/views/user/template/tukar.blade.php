@@ -2,22 +2,6 @@
 <html lang="en">
 <style>
 
-  hr#hr{
-    border-top:2px solid grey;
-  }
-  #komputer{
-    padding-top:30px;
-  }
-  #mouse, #mouseform{
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-  }
-  #mouseform{
-    display: none;
-  }   
-  
 </style>
 <head>
     <meta charset="UTF-8">
@@ -59,67 +43,26 @@
 <div class="row">
 
 <div class="col-md-4 text-center">
-<img src="{{asset ('assets/image/depp.jpg') }}" width="280px" margin="auto">
+<a href="http://localhost:81/banksampah/public/tukar/nonorganik "><img src="{{asset ('assets/image/depp.jpg') }}" width="280px" margin="auto"></a>
 <h3>Non Organik</h3>
 </div>
 
 <div class="col-md-4 text-center">
-<img src="{{asset ('assets/image/elektronik.jpg') }}" width="310px">
+<a  href="http://localhost:81/banksampah/public/tukar/elektronik"><img src="{{asset ('assets/image/elektronik.jpg') }}" width="310px"></a>
 <h3>Elektronik</h3>
-
 </div>
 
 <div class="col-md-4 text-center">
-<img src="{{asset ('assets/image/pakaian.jpg') }}" width="300px">
-<h3>Pakaian</h3>
-</div>
-</div>
-
-<h5 id="komputer">KOMPUTER</h5>
-<hr id="hr">
-
-<div class="row">
-<div class="col-md-4">
-<p id="mouse" class="bg-gray">Mouse</p>
-
-<form id="mouseform">
-  <div class="form-row align-items-center">
-    
-  
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      
-      </select>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        
-        <option value="Bagus">Bagus</option>
-        <option value="Rusak Ringan">Rusak Ringan</option>
-        <option value="Rusak Berat">Rusak Berat</option>
-        
-      </select>
-  
-  
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+    <a href="http://localhost:81/banksampah/public/tukar/pakaian"><img src="{{asset ('assets/image/pakaian.jpg') }}" width="300px"></a>
+    <h3>Pakaian</h3>
     </div>
+  
   </div>
-</form>
-</div>
 
-<div class="col-md-4">
-<p id="mouse" class="bg-gray">Mouse</p>
-</div>
 
-<div class="col-md-4">
-<p id="mouse" class="bg-gray">Mouse</p>
+
 </div>
 </div>
 
@@ -136,13 +79,7 @@
    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script> 
-$(document).ready(function(){
-  $("#mouse").click(function(){
-    $("#mouseform").slideDown("slow");
-  });
-});
 </script>
 </body>
 </html>
-
 
